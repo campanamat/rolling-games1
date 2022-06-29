@@ -4,7 +4,7 @@ let games = JSON.parse(localStorage.getItem('games'));
 let game = games.find(game=>game.id == idGame);
 let detail = document.createElement('div');
 detail.classList.add('card','row','g-0','col-12','col-md-6');
-//estilos particulares de la card
+//estilos particulares de la card, preguntar a joel sobre el trabajo de responsive
 detail.style.maxWidth='540px';
 detail.style.height = '60vh';
 detail.style.border = 'none';
