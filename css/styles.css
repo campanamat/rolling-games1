@@ -1,0 +1,29 @@
+body {  
+    background-image: url("/Other/Background.jpg");
+   height: 100vh;
+}
+
+
+.admin{
+    margin-top: 8px;
+    height: 40px;
+font-family: pressStart2P;
+font-size: 22px;
+background: #95C694;
+color: #383A3C;
+padding:5px;
+font-weight: 450;
+border: 2px solid black;
+}
+
+
+
+
+/* forma de utilizar los tipos de letra en el proyecto */
+@font-face {
+    font-family: gameover;
+    src: url(../Other/Fonts/game_over.ttf);}
+@font-face {
+    font-family: pressStart2P;
+    src: url(../Other/Fonts/PressStart2P-Regular.ttf);
+}
