@@ -1,6 +1,7 @@
 body {  
     background-image: url("/Other/Background.jpg");
-    }
+   height: 100vh;
+}
 
 
 .admin{
