@@ -13,7 +13,7 @@ class Game{
 let games = [
     new Game('','GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../images/GTAV.png',false),
     new Game('','GOD OF WAR','accion','God of War es un videojuego de acción-aventura desarrollado por SCE Santa Monica Studio y publicado por Sony Interactive Entertainment. Su lanzamiento se produjo el 20 de abril de 2018 como un título exclusivo para la consola PlayStation 4. Posteriormente, fue lanzado en Microsoft Windows el 14 de enero de 2022.','../images/GODOFWAR.jpg',false),
-    new Game('','RESIDENT EVIL 4','conocido en Japón como Biohazard 4, es un videojuego de disparos en tercera persona de estilo terror y supervivencia desarrollado por Capcom Production Studio 4 y distribuido por varias compañías de videojuegos, como Capcom, Ubisoft, Nintendo Australia, Red Ant Enterprises y THQ Asia Pacific.','../Images/RESIDENTEVIL4.jpg',true),     
+    new Game('','RESIDENT EVIL 4','accion','conocido en Japón como Biohazard 4, es un videojuego de disparos en tercera persona de estilo terror y supervivencia desarrollado por Capcom Production Studio 4 y distribuido por varias compañías de videojuegos, como Capcom, Ubisoft, Nintendo Australia, Red Ant Enterprises y THQ Asia Pacific.','../images/RESIDENTEVIL4.jpg',true),     
     new Game('','ASSASINS CREED','accion','Assassins Creed II: Brotherhood, titulado en español Assassins Creed: La Hermandad, es un videojuego de acción-aventura y sigilo de ficción histórica, desarrollado por Ubisoft Montreal. El juego fue lanzado a nivel mundial para PlayStation 3 y Xbox 360, comenzando en América del Norte el 16 de noviembre de 2010','../Images/ASSASINGCREED.webp',false),
     new Game('','PAC-MAN','arcade','Pac Man es un videojuego arcade creado por el diseñador de videojuegos Toru Iwatani de la empresa Namco, y distribuido por Midway Games al mercado estadounidense a principios de los años 1980. Desde que Pac-Man fue lanzado el 22 de mayo de 1980,​ fue un éxito.','../images/PACMAN.jpg',false),
     new Game('','TETRIS','arcade','Tetris es un videojuego de lógica originalmente diseñado y programado por Alekséi Pázhitnov en la Unión Soviética. Fue lanzado el 6 de junio de 1984, ​ mientras trabajaba para el Centro de Computación Dorodnitsyn de la Academia de Ciencias de la Unión Soviética en Moscú, RSFS de Rusia.','../images/TETRIS.png',false),
@@ -82,32 +82,15 @@ gameCard.innerHTML=`
 <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
 <h5  class="text-center">${game.name}</h5>    
 `    
-let productsContainer = document.getElementById('rollGames-container');
+let productsContainer = document.getElementById('sports-container');
 productsContainer.appendChild(gameCard)
 }
 })
+
+//Estrategy
 games.forEach(game =>{
-      if (game.category==='accion') {
+      if (game.category==='estrategy') {
       let gameCard = document.createElement('card');
-  gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
-  gameCard.id=game.id;
-  gameCard.classList.add('card','m-2','bg-transparent');
-  gameCard.style.width = '100%';    
-  gameCard.innerHTML=`
-  <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
-  <h5  class="text-center">${game.name}</h5>    
-  `    
-  let productsContainer = document.getElementById('sports-container');
-  productsContainer.appendChild(gameCard)
-}
-})
-
-
-//strategy
-games.forEach(game =>{
-  if(game.category=='estrategy'){
-
-  let gameCard = document.createElement('card');
   gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
   gameCard.id=game.id;
   gameCard.classList.add('card','m-2','bg-transparent');
