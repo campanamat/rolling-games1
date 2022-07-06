@@ -1,7 +1,7 @@
 // constructor del objeto juego
 class Game{
   constructor(id,name,category,description,image,destacado){
-    this.id = id;
+    this.id = Date.now();
     this.name = name;
     this.category = category;
     this.description = description;
@@ -11,7 +11,7 @@ class Game{
 }
 // array con algunos juegos creados
 let games = [
-  new Game(1,'nombrejuego','categoria','descripcion.','../assets/img/DevilMayCry.jpg',false),
+  new Game('','nombrejuego','categoria','descripcion.','../assets/img/DevilMayCry.jpg',false),
 ]
 
    // categorias
