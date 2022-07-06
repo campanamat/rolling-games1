@@ -74,6 +74,21 @@ games.forEach(game =>{
   if(game.category=='sports'){
 
   let gameCard = document.createElement('card');
+gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
+gameCard.id=game.id;
+gameCard.classList.add('card','m-2','bg-transparent');
+gameCard.style.width = '100%';    
+gameCard.innerHTML=`
+<a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
+<h5  class="text-center">${game.name}</h5>    
+`    
+let productsContainer = document.getElementById('rollGames-container');
+productsContainer.appendChild(gameCard)
+}
+})
+games.forEach(game =>{
+      if (game.category==='accion') {
+      let gameCard = document.createElement('card');
   gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
   gameCard.id=game.id;
   gameCard.classList.add('card','m-2','bg-transparent');
