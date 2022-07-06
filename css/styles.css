@@ -33,3 +33,9 @@ border: 2px solid black;
     display: flex;
     margin-left: 55px;
 }
+
+.table-product-image{
+    width: 150px;
+    object-fit: cover;
+
+}

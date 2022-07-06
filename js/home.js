@@ -42,8 +42,7 @@ games.forEach(game =>{
   gameCard.classList.add('card','m-2','bg-transparent',);
   gameCard.style.width = '100%';    
   gameCard.innerHTML=`
-  <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
-  <h5  class="text-center">${game.name}</h5>    
+  <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>   
   `    
   let productsContainer = document.getElementById('accion-container');
   productsContainer.appendChild(gameCard)
@@ -61,7 +60,6 @@ games.forEach(game =>{
   gameCard.style.width = '100%';    
   gameCard.innerHTML=`
   <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
-  <h5  class="text-center">${game.name}</h5>    
   `    
   let productsContainer = document.getElementById('arcade-container');
   productsContainer.appendChild(gameCard)
@@ -80,7 +78,6 @@ gameCard.classList.add('card','m-2','bg-transparent');
 gameCard.style.width = '100%';    
 gameCard.innerHTML=`
 <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
-<h5  class="text-center">${game.name}</h5>    
 `    
 let productsContainer = document.getElementById('sports-container');
 productsContainer.appendChild(gameCard)
@@ -97,7 +94,6 @@ games.forEach(game =>{
   gameCard.style.width = '100%';    
   gameCard.innerHTML=`
   <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
-  <h5  class="text-center">${game.name}</h5>    
   `    
   let productsContainer = document.getElementById('estrategy-container');
   productsContainer.appendChild(gameCard)
