@@ -1,0 +1,25 @@
+.categories{
+    padding: 5px;
+    background: #35363A;
+    color: #00E6fE;
+}
+/* tamaño de las imagenes en la pagina principal */
+.images{
+    width: 100%;
+    height: 20vh;
+    
+}
+/* tamaño imagenes en pagina de detalle */
+.images-detailPage{
+    width: 100%;
+    height: 60vh;
+}  
+.titles-games{
+    color: #000;
+    
+} 
+.text-estrategy{
+    color: #FFD505;
+
+}
+

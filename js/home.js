@@ -39,7 +39,7 @@ games.forEach(game =>{
   let gameCard = document.createElement('card');
   gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
   gameCard.id=game.id;
-  gameCard.classList.add('card','m-2','bg-transparent');
+  gameCard.classList.add('card','m-2','bg-transparent',);
   gameCard.style.width = '100%';    
   gameCard.innerHTML=`
   <a href="detailPage.html#${game.id}"><img src=${game.image} class="images" alt=${game.name}></a>
