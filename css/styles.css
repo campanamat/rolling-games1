@@ -1,6 +1,6 @@
 body {  
-    background-image: url("/Other/Background.jpg");
-   height: 100vh;
+    background-image: url("../assets/Images/Background/background.jpg");
+   height: 90vh;
 }
 
 
@@ -22,10 +22,10 @@ border: 2px solid black;
 /* forma de utilizar los tipos de letra en el proyecto */
 @font-face {
     font-family: gameover;
-    src: url(../Other/Fonts/game_over.ttf);}
+    src: url(../assets/Fonts/game_over.ttf);}
 @font-face {
     font-family: pressStart2P;
-    src: url(../Other/Fonts/PressStart2P-Regular.ttf);
+    src: url(../assets/Fonts/PressStart2P-Regular.ttf);
 }
 
 .categories{
