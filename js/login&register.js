@@ -18,8 +18,8 @@ class User{
         new User(1, 'Matias Campana', 'matias_campana@outlook.com', 'designRS2022',true),
         new User(2, 'Angel Carrera', 'ancar121286@gmail.com', 'Urugame2022',true),
         new User(3, 'Fernando Garcia','fergarcia10@gmail.com','PROYECTrolling',true),
-       new User(4, 'Pilar Juez Perez', 'pilijuez@gmail.com', 'Irlandagames2022',true),
-      new User(5, 'Joel Tula','fergarcia10@gmail.com','Games4EVER',true)
+        new User(4, 'Pilar Juez Perez', 'pilijuez@gmail.com', 'Irlandagames2022',true),
+        new User(5, 'Joel Tula','fergarcia10@gmail.com','Games4EVER',true)
     ];
     localStorage.setItem('users',JSON.stringify(users));
   }    
@@ -36,7 +36,7 @@ class User{
         localStorage.setItem('favs',JSON.stringify(userFound.favs));
         localStorage.setItem('cart',JSON.stringify(userFound.cart));
         localStorage.setItem('user',JSON.stringify(userFound.id));
-        window.location.assign(window.location.origin + '/home/homeprincipal.html') //!poner la direccion de correo a donde sera redirigido el usuario/adminstrador
+        window.location.assign(window.location.origin + '/html/home.html') //!poner la direccion de correo a donde sera redirigido el usuario/adminstrador
     }else{
       errorAlert('Los datos ingresados no son correctos')
     }
