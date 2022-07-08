@@ -39,3 +39,35 @@ border: 2px solid black;
     object-fit: cover;
 
 }
+/* 
+.accion-container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.arcade-container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.sports-container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.estrategy-container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+ */
+
+.carrousel{
+    overflow: hidden;
+    margin-left: 15px;
+    width: 95%;
+    height: auto;
+}
