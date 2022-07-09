@@ -16,9 +16,11 @@
 }
 /* fin redes */
 footer {
-   margin-top: 50vh; 
+  margin-top: 30px;
   width: 100%;
   font-size: 20px;
+  
+  
   
 }
 .logo{
