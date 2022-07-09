@@ -23,7 +23,7 @@ footer {
 }
 .logo{
     border: 1px solid white;
-    background-image: url(../Images/Logo.png);
+    background-image: url(../assets/Images/Logo.png);
     background-size:cover;
     background-position: center;
     object-fit:cover;

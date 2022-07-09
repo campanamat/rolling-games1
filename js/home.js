@@ -99,3 +99,8 @@ games.forEach(game =>{
   productsContainer.appendChild(gameCard)
 }
 })
+
+import { navMenu } from "./helpers.js";
+navMenu();
+import { footerMenu } from "./helpers.js";
+footerMenu();

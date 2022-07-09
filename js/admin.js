@@ -66,3 +66,7 @@ class Game{
       //? Acá hacemos una actualizacion de la pagina porque no viene por defecto como si lo hace en los formularios
       window.location.reload();
     }
+    import { navMenu } from "./helpers.js";
+navMenu();
+import { footerMenu } from "./helpers.js";
+footerMenu();
