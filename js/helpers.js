@@ -6,7 +6,7 @@ export function navMenu (){
      <a class="navbar-brand me-5 mb-lg-0" href="/html/index.html"> <img src="../assets/Images/Logo.png" width="120px" > </a>
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
   
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse " id="navbar">
           <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
             <li class="nav-item"> <a class="nav-link" href="/html/index.html"> <img src="../assets/Images/Inicio.png" height="40px" > </a> </li>
             <li class="nav-item"> <a class="nav-link" href="/html/Contacto.html"> <img src="../assets/Images/Contacto.png" height="40px" > </a> </li>

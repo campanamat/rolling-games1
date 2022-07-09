@@ -6,6 +6,8 @@ body {
 
 .nav-buttons{
     margin-top: 8px;
+    margin-right: 5px;
+    width: fit-content;
     height: 40px;
 font-family: pressStart2P;
 font-size: 20px;

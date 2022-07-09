@@ -28,9 +28,7 @@ class User{
     let passOk= /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(pass);
     if(emailOk && passOk){     
       let userFound = users.find(user=>user.email===email);      
-    if(userFound && userFound.password === pass){        
-        localStorage.setItem('favs',JSON.stringify(userFound.favs));
-        localStorage.setItem('cart',JSON.stringify(userFound.cart));
+    if(userFound && userFound.password === pass){       
         localStorage.setItem('user',JSON.stringify(userFound.id));
         window.location.assign(window.location.origin + '/html/home.html')
     }else{
@@ -48,7 +46,7 @@ class User{
     loginForm.appendChild(errorMessage);
     setTimeout(()=>{
       errorMessage.remove()
-    },3000)
+    },2000)
   }  
   //* Registro  
   const register = (event) =>{
@@ -77,4 +75,3 @@ class User{
     }
   
   } 
-  

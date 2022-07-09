@@ -18,7 +18,7 @@ let games = [
     new Game('','PAC-MAN','arcade','Pac Man es un videojuego arcade creado por el diseñador de videojuegos Toru Iwatani de la empresa Namco, y distribuido por Midway Games al mercado estadounidense a principios de los años 1980. Desde que Pac-Man fue lanzado el 22 de mayo de 1980,​ fue un éxito.','../assets/Images/PACMAN.jpg',false),
     new Game('','TETRIS','arcade','Tetris es un videojuego de lógica originalmente diseñado y programado por Alekséi Pázhitnov en la Unión Soviética. Fue lanzado el 6 de junio de 1984, ​ mientras trabajaba para el Centro de Computación Dorodnitsyn de la Academia de Ciencias de la Unión Soviética en Moscú, RSFS de Rusia.','../assets/Images/TETRIS.png',false),
     new Game('','METAL SLUG 001','arcade','es un videojuego de la consola Neo-Geo creado por Nazca, posteriormente adquirido por SNK. Fue creado en 1996 para la plataforma MVS. Este juego es conocido por su sentido del humor, por sus entretenidos gráficos, y su posibilidad para dos jugadores simultáneos','../assets/Images/METALSLUG.jpg',true),
-    new Game('', 'MARIO BROS','arcade','Mario Bros. es un videojuego de arcade desarrollado por Nintendo en el año 1983. Fue creado por Shigeru Miyamoto. Ha sido presentado como un minijuego en la serie de Super Mario Advance y otros juegos.','../Images/MARIOBROS.jpg', false),
+    new Game('', 'MARIO BROS','arcade','Mario Bros. es un videojuego de arcade desarrollado por Nintendo en el año 1983. Fue creado por Shigeru Miyamoto. Ha sido presentado como un minijuego en la serie de Super Mario Advance y otros juegos.','../assets/Images/MARIOBROS.jpg', false),
     new Game('','NBA 2K21','sports','NBA 2K21 es un videojuego de simulación de baloncesto de 2020 desarrollado por Visual Concepts y publicado por 2K Sports, basado en la Asociación Nacional de Baloncesto. Es la entrega número 22 de la franquicia NBA 2K y el sucesor de NBA 2K20, y el predecesor de NBA 2K22.','../assets/Images/NBA2K21.jpg', true),
     new Game('','FIFA 2022','sports','Es un videojuego desarrollado por EA Vancouver y EA Romania, siendo publicado por EA Sports. Está disponible para PlayStation 4, PlayStation 5, Xbox Series X/S, Xbox One, Microsoft Windows, Google Stadia y Nintendo Switch.','../assets/Images/fifa22.png', true),
     new Game('','PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
@@ -35,7 +35,6 @@ localStorage.setItem('games',JSON.stringify(games));
 //ACCION
 games.forEach(game =>{
   if(game.category=='accion'){
-
   let gameCard = document.createElement('card');
   gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
   gameCard.id=game.id;
@@ -48,11 +47,9 @@ games.forEach(game =>{
   productsContainer.appendChild(gameCard)
 }
 })
-
 //ARCADE
 games.forEach(game =>{
   if(game.category=='arcade'){
-
   let gameCard = document.createElement('card');
   gameCard.href= window.location.origin + '../detailPage.html#'+ game.id;    
   gameCard.id=game.id;
@@ -65,8 +62,6 @@ games.forEach(game =>{
   productsContainer.appendChild(gameCard)
 }
 })
-
-
 //sport 
 games.forEach(game =>{
   if(game.category=='sports'){
@@ -83,7 +78,6 @@ let productsContainer = document.getElementById('sports-container');
 productsContainer.appendChild(gameCard)
 }
 })
-
 //Estrategy
 games.forEach(game =>{
       if (game.category==='estrategy') {
@@ -99,8 +93,20 @@ games.forEach(game =>{
   productsContainer.appendChild(gameCard)
 }
 })
-
-import { navMenu } from "./helpers.js";
-navMenu();
+  // IDENTIFICAMOS SI EL USUARIO ES ADMIN O NO
+  let userId = localStorage.getItem('user');
+  console.log(userId);
+  let userActives = JSON.parse(localStorage.getItem('users'));
+  console.log(users);
+  let userActive = users.find(user=>user.id==userId);
+  console.log(userActive);
+  if(userActive.admin){
+    let adminButton = document.createElement('li');
+    adminButton.classList.add('nav-item');
+    adminButton.innerHTML=`
+    <li class="nav-item"> <a class="nav-link nav-buttons" href="/html/tablaadmin.html">Administracion </a> </li>
+    `;
+    document.getElementById('menu').appendChild(adminButton)
+  }
 import { footerMenu } from "./helpers.js";
 footerMenu();
