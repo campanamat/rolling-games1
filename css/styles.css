@@ -4,16 +4,26 @@ body {
 }
 
 
-.admin{
+.nav-buttons{
     margin-top: 8px;
     height: 40px;
 font-family: pressStart2P;
-font-size: 22px;
+font-size: 20px;
 background: #95C694;
 color: #383A3C;
-padding:5px;
 font-weight: 450;
 border: 2px solid black;
+
+}
+.register{
+    text-decoration: none;
+    margin-top: 8px;
+    height: 40px;
+font-family: pressStart2P;
+font-size: 20px;
+background: #95C694;
+color: #383A3C;
+font-weight: 450;
 }
 
 

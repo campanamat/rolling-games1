@@ -1,22 +1,23 @@
 export function navMenu (){
-    let newElement = document.createElement('nav');
-    newElement.innerHTML=`<nav class="navbar navbar-expand-lg ">
+    let newNav = document.createElement('nav');
+    newNav.innerHTML=`
     <div class="container-fluid">
-     <a class="navbar-brand me-5 mb-lg-0" href="index.html"> <img src="../assets/Images/Logo.png" width="120px" > </a>
+    <nav class="navbar navbar-expand-lg ">
+     <a class="navbar-brand me-5 mb-lg-0" href="/html/index.html"> <img src="../assets/Images/Logo.png" width="120px" > </a>
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
   
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
-            <li class="nav-item"> <a class="nav-link" href="#"> <img src="../assets/Images/Inicio.png" height="40px" > </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="/html/index.html"> <img src="../assets/Images/Inicio.png" height="40px" > </a> </li>
             <li class="nav-item"> <a class="nav-link" href="/html/Contacto.html"> <img src="../assets/Images/Contacto.png" height="40px" > </a> </li>
             <li class="nav-item"> <a class="nav-link" href="/html/Acerca de.html"> <img src="../assets/Images/acerca de.png" height="40px" > </a> </li>
-            <li class="nav-item"> <a class="nav-link" href="/html/Login.html"> <img src="../assets/Images/login.png" height="40px" > </a> </li>
+            <li class="nav-item nav-buttons"> <a class="nav-link" href="/html/index.html">Cerrar Sesion</li>
           </ul>
         </div>
       </div>
     </nav>
 `
-document.querySelector('header').appendChild(newElement)
+document.querySelector('header').appendChild(newNav)
   }
 
   export function footerMenu() {
