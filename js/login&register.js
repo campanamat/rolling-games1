@@ -3,9 +3,7 @@ class User{
       this.name = name;
       this.id = id;
       this.email = email;
-      this.password = password;
-      this.favs = [];
-      this.cart = [];
+      this.password = password;      
       this.admin = admin;
     }
   }
@@ -14,12 +12,10 @@ class User{
   if(usersFromLS){
     users = usersFromLS
   }else{
-    users = [
-        new User(1, 'Matias Campana', 'matias_campana@outlook.com', 'designRS2022',true),
-        new User(2, 'Angel Carrera', 'ancar121286@gmail.com', 'Urugame2022',true),
-        new User(3, 'Fernando Garcia','fergarcia10@gmail.com','PROYECTrolling',true),
-        new User(4, 'Pilar Juez Perez', 'pilijuez@gmail.com', 'Irlandagames2022',true),
-        new User(5, 'Joel Tula','fergarcia10@gmail.com','Games4EVER',true)
+    users = [        
+        new User(1, 'Angel Carrera', 'ancar121286@gmail.com', 'Urugame2022',true),
+        new User(2, 'Fernando Garcia','fergarcia10@gmail.com','PROYECTrolling',true),
+        new User(3, 'Pilar Juez Perez', 'pilijuez@gmail.com', 'Irlandagames2022',true),        
     ];
     localStorage.setItem('users',JSON.stringify(users));
   }    
@@ -32,11 +28,9 @@ class User{
     let passOk= /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(pass);
     if(emailOk && passOk){     
       let userFound = users.find(user=>user.email===email);      
-    if(userFound && userFound.password === pass){        
-        localStorage.setItem('favs',JSON.stringify(userFound.favs));
-        localStorage.setItem('cart',JSON.stringify(userFound.cart));
+    if(userFound && userFound.password === pass){       
         localStorage.setItem('user',JSON.stringify(userFound.id));
-        window.location.assign(window.location.origin + '/html/home.html') //!poner la direccion de correo a donde sera redirigido el usuario/adminstrador
+        window.location.assign(window.location.origin + '/html/home.html')
     }else{
       errorAlert('Los datos ingresados no son correctos')
     }
@@ -44,17 +38,17 @@ class User{
     errorAlert('Revise los datos ingresados')
   }
   }  
-  function errorAlert (texto){
+  function errorAlert (text){
     let errorMessage = document.createElement('div');
-    errorMessage.innerText = texto;
+    errorMessage.innerText = text;
     errorMessage.classList.add('alert','alert-danger');
     let loginForm = document.getElementById('login-form');
     loginForm.appendChild(errorMessage);
     setTimeout(()=>{
       errorMessage.remove()
-    },3000)
+    },2000)
   }  
-  //* Funciones para Registro  
+  //* Registro  
   const register = (event) =>{
     event.preventDefault();
     let fullName = document.querySelector('#register-fullname').value;
@@ -69,16 +63,15 @@ class User{
     if(fullNameOk && emailOk  && pass2Ok && passOk && equalPass){
       let usersLS = JSON.parse(localStorage.getItem('users'));
       if(usersLS.find(user=>user.email==email)){
-        console.log('Se ha evitado un inicio de sesión sospechoso');
+        errorAlert('Se ha evitado un inicio de sesión sospechoso');
       }else{
         usersLS.push(new User(usersLS.length+1,fullName,email,pass,false));
         localStorage.setItem('user',JSON.stringify(usersLS.length+1));
-        window.location.assign(window.location.origin + '/home/homeprincipal.html')//!direccion a donde sera redirigido el usuario una vez registrado
+        window.location.assign(window.location.origin + '/html/home.html');
       }
        localStorage.setItem('users',JSON.stringify(usersLS))
     }else{
-      console.log('Revise la informacion proporcionada');
+      errorAlert('Revise la informacion proporcionada');
     }
   
   } 
-  

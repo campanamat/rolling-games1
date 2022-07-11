@@ -16,14 +16,16 @@
 }
 /* fin redes */
 footer {
-   margin-top: 50vh; 
+  margin-top: 30px;
   width: 100%;
   font-size: 20px;
+  
+  
   
 }
 .logo{
     border: 1px solid white;
-    background-image: url(../Images/Logo.png);
+    background-image: url(../assets/Images/Logo.png);
     background-size:cover;
     background-position: center;
     object-fit:cover;

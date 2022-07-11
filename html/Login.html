@@ -16,17 +16,17 @@
           <h3>LOGIN HERE</h3>
           <div class="input-group">
               <input type="email" id="email" required class="input">
-              <label for="email" class="input-label">Username</label>
+              <label for="email" class="input-label">Usuario</label>
           </div>
           <div class="input-group">
               <input type="password" id="pass" required class="input">
-              <label for="pass" class="input-label">Password</label>
+              <label for="pass" class="input-label">Contraseña</label>
           </div>
           <button class="button-login">
-              <span class="text">Log In</span>
+              <span class="text">Ingresar</span>
               <i class="fas fa-check icon"></i>
           </button>
-          <button class="button-login" onclick="register(event)">
+          <button class="button-login"type="button" data-bs-toggle="modal" data-bs-target="#register-modal">
               <span class="text">Registrarse</span>
               <i class="fas fa-check icon"></i>
           </button>
@@ -36,7 +36,35 @@
           </div>
       </form>
   </div>
+<!-- MODAL DE REGISTRO -->
+<div class="modal" id="register-modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registrarse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="register(event)">
+          <label for="register-fullname">Nombre y apellido</label>
+          <input class="form-control" type="text" id="register-fullname" required maxlength="35" minlength="4">
+          <label for="register-email">Email</label>
+          <input class="form-control" type="email" id="register-email" required maxlength="35" minlength="4">
+          
+          <label for="register-pass">Contraseña</label>
+          <input class="form-control" type="password" id="register-pass" required maxlength="16" minlength="8">
+          <label for="register-pass2">Repetir contraseña</label>
 
+          <input class="form-control" type="password" id="register-pass2" required maxlength="16" minlength="8">
+          <div class="my-3">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="/js/login&register.js"></script>

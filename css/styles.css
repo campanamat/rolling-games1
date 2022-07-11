@@ -1,24 +1,50 @@
-body {
+body {  
   background-image: url("../assets/Images/Background/background.jpg");
-  height: 90vh;
+ height: 90vh;
 }
+.nav-buttons{
+  margin-top: 8px;
+  margin-right: 5px;
+  width: fit-content;
+  height: 40px;
+font-family: pressStart2P;
+font-size: 20px;
+background: #95C694;
+color: #383A3C;
+font-weight: 450;
+border: 2px solid black;
 
-.admin {
+}
+.register{
+  text-decoration: none;
   margin-top: 8px;
   height: 40px;
-  font-family: pressStart2P;
-  font-size: 22px;
-  background: #95c694;
-  color: #383a3c;
-  padding: 5px;
-  font-weight: 450;
-  border: 2px solid black;
+font-family: pressStart2P;
+font-size: 20px;
+background: #95C694;
+color: #383A3C;
+font-weight: 450;
 }
 
 /* forma de utilizar los tipos de letra en el proyecto */
 @font-face {
   font-family: gameover;
-  src: url("../assets/Fonts/game_over.ttf");
+  src: url(../assets/Fonts/game_over.ttf);}
+  
+@font-face {
+  font-family: pressStart2P;
+  src: url(../assets/Fonts/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+  font-family: MrRobot;
+  src: url("../assets/Fonts/MR\ ROBOT.ttf");
+}
+
+.table-product-image{
+  width: 150px;
+  object-fit: cover;
+
 }
 
 .text-contacto{
@@ -41,8 +67,6 @@ body {
     margin-left: 30px;
 }
 
-
-
 .title-category{
     font-family: MrRobot;
     color: rgb(255, 0, 0);
@@ -64,15 +88,8 @@ body {
     color: rgb(255, 238, 0);
 }
 
-@font-face {
-  font-family: pressStart2P;
-  src: url("../assets/Fonts/PressStart2P-Regular.ttf");
-}
 
-@font-face {
-  font-family: MrRobot;
-  src: url("../assets/Fonts/MR\ ROBOT.ttf");
-}
+
 
 .categories {
   margin: 10px;
@@ -80,24 +97,7 @@ body {
   margin-left: 55px;
 }
 
-.table-product-image {
-  width: 150px;
-  object-fit: cover;
-}
-
-#accion-container {
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  padding: 10px;
-}
-
-#arcade-container{
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    padding: 10px;
-}
-
-#sports-container{
+#sports-container {
     overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 10px;
@@ -122,4 +122,11 @@ body {
   margin-left: 15px;
   width: 95vw;
   height: auto;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
