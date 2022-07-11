@@ -1,73 +1,125 @@
-body {  
-    background-image: url("../assets/Images/Background/background.jpg");
-   height: 90vh;
+body {
+  background-image: url("../assets/Images/Background/background.jpg");
+  height: 90vh;
 }
 
-
-.admin{
-    margin-top: 8px;
-    height: 40px;
-font-family: pressStart2P;
-font-size: 22px;
-background: #95C694;
-color: #383A3C;
-padding:5px;
-font-weight: 450;
-border: 2px solid black;
+.admin {
+  margin-top: 8px;
+  height: 40px;
+  font-family: pressStart2P;
+  font-size: 22px;
+  background: #95c694;
+  color: #383a3c;
+  padding: 5px;
+  font-weight: 450;
+  border: 2px solid black;
 }
-
-
-
 
 /* forma de utilizar los tipos de letra en el proyecto */
 @font-face {
-    font-family: gameover;
-    src: url(../assets/Fonts/game_over.ttf);}
+  font-family: gameover;
+  src: url("../assets/Fonts/game_over.ttf");
+}
+
+.text-contacto{
+    font-family: MrRobot;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.text1-contacto{
+    font-family: MrRobot;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text2-contacto{
+    padding: 20px;
+    margin-left: 30px;
+}
+
+
+
+.title-category{
+    font-family: MrRobot;
+    color: rgb(255, 0, 0);
+}
+.title-category-accion{
+    font-family: MrRobot;
+    color: rgb(0, 247, 255);
+}
+.title-category-arcade{
+    font-family: MrRobot;
+    color: rgb(255, 0, 242);
+}
+.title-category-sports{
+    font-family: MrRobot;
+    color: rgb(51, 255, 0);
+}
+.title-category-estrategy{
+    font-family: MrRobot;
+    color: rgb(255, 238, 0);
+}
+
 @font-face {
-    font-family: pressStart2P;
-    src: url(../assets/Fonts/PressStart2P-Regular.ttf);
+  font-family: pressStart2P;
+  src: url("../assets/Fonts/PressStart2P-Regular.ttf");
 }
 
-.categories{
-    margin: 10px;
-    display: flex;
-    margin-left: 55px;
+@font-face {
+  font-family: MrRobot;
+  src: url("../assets/Fonts/MR\ ROBOT.ttf");
 }
 
-.table-product-image{
-    width: 150px;
-    object-fit: cover;
-
+.categories {
+  margin: 10px;
+  display: flex;
+  margin-left: 55px;
 }
-/* 
-.accion-container{
+
+.table-product-image {
+  width: 150px;
+  object-fit: cover;
+}
+
+#accion-container {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+#arcade-container{
     overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 10px;
 }
 
-.arcade-container{
+#sports-container{
     overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 10px;
 }
 
-.sports-container{
+#estrategy-container{
     overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 10px;
 }
 
-.estrategy-container{
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    padding: 10px;
-}
- */
 
-.carrousel{
-    overflow: hidden;
-    margin-left: 15px;
-    width: 95%;
-    height: auto;
+#accion-container::-webkit-scrollbar,
+#estrategy-container::-webkit-scrollbar,
+#sports-container::-webkit-scrollbar,
+#arcade-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel {
+  overflow: hidden;
+  margin-left: 15px;
+  width: 95vw;
+  height: auto;
 }

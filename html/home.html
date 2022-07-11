@@ -30,7 +30,9 @@
         </div> 
     </header>  
     <main>
-      <section class="m-5">
+      <section class="m-4">
+        <h1 class="title-category text-center">ROLLING GAMES</h1> 
+        //ponemos esto??
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -60,20 +62,59 @@
       </section>
 
 
-      <section class="d-flex text-white bg-gradient m-3">
-        <h5>Accion</h5>
+      <section class="text-white bg-gradient m-3">
+        <h2 class="title-category-accion p-3">ACCION</h2>
         <div class="d-flex align-items-center carrousel mt-0">
-          <button class="angle-left h-50 btn">
+          <button class="angle-left h-50 btn" onclick="move('accion-container','left')">
             <i class="fa-solid fa-arrow-left-long"></i>
           </button>
-          <div class="d-flex w-100 p-5" id="accion-container"> </div>
-          <button class="angle-right h-50 btn">
+          <div class="d-flex p-5" id="accion-container"> </div>
+          <button class="angle-right h-50 btn" onclick="move('accion-container','right')">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </section>
 
-      <section class="d-flex text-white bg-gradient m-3">
+      <section class="text-white bg-gradient m-3">
+        <h2 class="title-category-arcade p-3">ARCADE</h2>
+        <div class="d-flex align-items-center carrousel mt-0">
+          <button class="angle-left h-50 btn" onclick="move('arcade-container','left')">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <div class="d-flex p-5" id="arcade-container"> </div>
+          <button class="angle-right h-50 btn" onclick="move('arcade-container','right')">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="text-white bg-gradient m-3">
+        <h2 class="title-category-sports p-3">SPORTS</h2>
+        <div class="d-flex align-items-center carrousel mt-0">
+          <button class="angle-left h-50 btn " onclick="move('sports-container','left')">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <div class="d-flex p-5" id="sports-container"> </div>
+          <button class="angle-right h-50 btn" onclick="move('sports-container','right')">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="text-white bg-gradient m-3">
+        <h2 class="title-category-estrategy p-3">STRATEGY</h2>
+        <div class="d-flex align-items-center carrousel mt-0">
+          <button class="angle-left h-50 btn " onclick="move('estrategy-container','left')">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <div class="d-flex p-5" id="estrategy-container"> </div>
+          <button class="angle-right h-50 btn" onclick="move('estrategy-container','right')">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- <section class="d-flex text-white bg-gradient m-3">
         <h5>ARCADE</h5>
         <div class="d-flex align-items-center carrousel mt-0">
           <button class="angle-left h-50 btn">
@@ -110,7 +151,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-<!--     
+    
       <section id="arcade-container" class="d-flex text-white bg-gradient m-3">ARCADE </section>
       <section id="sports-container" class="d-flex text-white bg-gradient m-3">SPORTS </section>
       <section id="estrategy-container" class="d-flex text-white bg-gradient m-3">ESTRATEGY </section> -->
