@@ -97,6 +97,18 @@ font-weight: 450;
   margin-left: 55px;
 }
 
+#accion-container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+#arcade-container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
 #sports-container {
     overflow-x: scroll;
     scroll-behavior: smooth;
