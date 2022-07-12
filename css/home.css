@@ -1,26 +1,53 @@
-.categories{
-    padding: 5px;
-    background: #35363A;
-    color: #00E6fE;
+.categories {
+  padding: 5px;
+  background: #35363a;
+  color: #00e6fe;
 }
 /* tamaño de las imagenes en la pagina principal */
-.images{
-    width: fit-content;
-    height: 75vh;
-    /* object-fit: contain; */
-    
+.images {
+  width: fit-content;
+  height: 75vh;
+  /* object-fit: contain; */
 }
 /* tamaño imagenes en pagina de detalle */
 
-.card-images{
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+.card-images {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.game-card{
-    width: 250px;
-    height: 300px;
-    margin: 10px;
+.game-card {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
+
+.images-acercaDe {
+  width: fit-content;
+  height: 55vh;
+  border-radius: 30%;
+  filter: drop-shadow(30px)
+}
+
+.imagen-end {
+  margin: auto;
+}
+
+.text-acerca {
+  font-family: MrRobot;
+  color: white;
+  text-align: center;
+  padding: 5em 0;
+  margin-right: auto;
+}
+
+.arcerca-container {
+  margin: 20px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: end;
 }

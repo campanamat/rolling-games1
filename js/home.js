@@ -96,7 +96,7 @@ games.forEach((game) => {
   }
 });
 
-
+// FUNCION PARA MOVER CATEGORIAS
 const move = (container, direccion) => {
   console.log("funcionMove");
   const containerToMove = document.getElementById(container);
@@ -113,4 +113,41 @@ const move = (container, direccion) => {
         containerToMove.scrollLeft = 1361
 } 
 }
+
+// const searchInput = document.getElementById('searchInput')
+
+// function searchGame(){
+//   const filter = searchInput.value.toUpperCase(); 
+// }
+
+
+
+
+
+
+//FUNCION PARA BUSCADOR
+// function search() {
+//   let productToSearch = prompt("What product do you want to search for?");//dato que ingresa el usuario para buscar el juego
+//   if (productToSearch.trim() == "games"){//nuestro array de juegos
+//     swal.fire("Invalid Text");//es un alert de la pagina sweetalert
+//   } else {
+//     if (shoppingCart.includes(productToSearch) == true) {//la manera en que los busca
+//       swal.fire("Product Found.");
+//     } else {
+//       swal.fire("Product Not Found.");
+//     }
+//   }
+// }
+
+// function filterProducts() {
+//   let productFiltered = prompt("Search Products by cue");
+//   if (productFiltered.trim() == "") {
+//     swal.fire("Invalid Text");
+//   } else {
+//     let userSearch = shoppingCart.filter((product) =>
+//       product.includes(productFiltered)
+//     );
+//     swal.fire(`Products with "${productFiltered}" \n :marca_de_verificación_blanca:${userSearch.join("\n :marca_de_verificación_blanca:")}`);
+//   }
+// }
 

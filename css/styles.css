@@ -142,3 +142,9 @@ font-weight: 450;
   justify-content: center;
   align-items: center;
 }
+
+.text1-acerca{
+  font-family: MrRobot;
+  color: white;
+  text-align: center;
+}
