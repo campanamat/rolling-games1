@@ -1,0 +1,180 @@
+body{
+    background-image: url("/assets/Images/15457.jpg");
+    background-size: cover;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,.05);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(8,7,16,0.25);
+    padding: 50px 35px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* ======================== */
+
+.input-group {
+    position: relative;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+    height: 50px;
+    width: 100%;
+    
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.input:focus~.input-label,
+.input:valid~.input-label {
+    transform: translate(0, -30px) scale(.8);
+    color: #d1c5fc;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #d1c5fc;
+}
+.button-login{
+    position: relative;
+    height: 30px;
+    font-size: 10px;
+    background-color: #ffffff;
+    color: #080710;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s,
+    border-radius .5s;
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 600;
+
+}
+.text{
+    color: #080710;
+    font-size: 150%;
+}
+.button-login *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity .25s;
+}
+.icon{
+    opacity: 0;
+}
+.button-login:focus{
+    width: 30px;
+    background-color: #44c08a;
+    border-radius: 50%;
+}
+.button-login:focus .text{
+    opacity: 0;
+}
+.button-login:focus .icon{
+    opacity: 1;
+    color: #ffffff;
+    transition-delay: .5s;
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+.social div{
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+.social div:hover{
+    background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+    margin-left: 25px;
+}
+.social i{
+    margin-right: 4px;
+}
+.back{
+    color: gray;
+}
+p{
+    color: #19E8FD;
+}
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.button-back{
+    display:inline-block;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #3c67e3;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}

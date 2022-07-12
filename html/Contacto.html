@@ -5,46 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
     <title>RollingGames - Contacto</title>
 </head>
 <body>
 <!--Navbar  bootstrap-->
- <div class="container-fluid pe-5">
- <nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-   <a class="navbar-brand me-5 mb-lg-0" href="/index.html"> <img src="/Images/Logo.png" width="120px" > </a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="container-fluid pe-5">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand me-5 mb-lg-0" href="/index.html"> <img src="../assets/Images/Logo.png" width="120px" > </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" href="/html/index.html"> <img src="/Images/Inicio.png" height="40px" > </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/html/Contacto.html"> <img src="/Images/Contacto.png" height="40px" > </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/html/Contacto.html"> <img src="/Images/acerca de.png" height="40px" > </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/html/Login.html"> <img src="/Images/login.png" height="40px" > </a> </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+            <li class="nav-item"> <a class="nav-link" href="../html/index.html"> <img src="../assets/Images/Inicio.png" height="40px" > </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../html/Contacto.html"> <img src="../assets/Images/Contacto.png" height="40px" > </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../html/Contacto.html"> <img src="../assets/Images/acerca de.png" height="40px" > </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../html/Login.html"> <img src="../assets/Images/login.png" height="40px" > </a> </li>
+          </ul>
+        </div>
     </div>
   </nav>
- </div>
-<!--Navbar  bootstrap-->
-<!--serch   bootstrap-->
-  <div class="container-fluid pe-5">
-  <nav class="navbar">
-  <div class="container-fluid">
-    <div></div>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success btn-dark" type="submit">Buscar</button>
-    </form>
   </div>
-  </nav>
-  </div>
-<!--serch   bootstrap-->
 
+  <main>
+ 
+    <section class="text1-contacto m-3">
+      <p>El Centro de Atencion al Cliente esta a tu disposición para brindarte la informacion que necesites. Podes realizar tus consultas y reclamos de lunes a viernes de 8:00 a 20:00 por el costo de una llamada local, desde cualquier lugar del pais.</p>
+    </section>
 
+    <section>
+      <div class="contacto row container-fluid">
+        <div class="mb-3 col-12 col-sm-4 col-lg-4">
+          <label for="form-contacto" class="form-label text1-contacto">Email o Usuario</label>
+          <input type="email" class="form-control text2-contacto" id="form-contacto" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 col-12 col-sm-4 col-lg-4">
+          <label for="form-text-contacto" class="form-label text1-contacto">Ingrese su Consulta o Reclamo</label>
+          <textarea class="form-control text2-contacto" id="form-text-contacto" rows="3"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-success">ENVIAR</button>
+        </div>
+      </div>
+        
+    </section>
+    <br>
+    <br>
+    
+  <section>
+    <div class="container-fluid">
+      <h2 class="text-center text1-contacto m-3">CONTACTENOS</h2>
+      <div class="row ml-2 mr-2">
+        <div class="col-12 col-sm-4 col-lg-4 text-center text1-contacto">
+          <i class="icon fas fa-map-marker-alt mt-3 mb-3 color3"></i>
+          <p class="m-1">Gral. Paz 576</p>
+          <p class="m-1">San Miguel de Tucuman</p>
+          <p class="m-1">Tucuman</p>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-4 text-center text1-contacto">
+          <i class="icon fas fa-mobile-alt mt-3 mb-3 color3"></i>
+          <p>+54 381 000-0000</p>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-4 text-center text1-contacto">
+          <i class="icon fas fa-envelope mt-3 mb-3 color3"></i>
+          <p>rollingGames@comision1i.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  </main>
 
+  <footer>
+    <div class="container-fluid text-white bg-dark py-4">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-lg-4">
+                <div class="text-center ms-auto logo me-auto"><a href="index.html"></a></div>              
+            </div> 
+            <div class="col-12 col-sm-4 col-lg-4 text-center  ms-auto me-auto">
+                 2022 RollingGames SRL.&#169
+         </div>
+        <div class="col-12 col-sm-4 col-lg-4 ms-auto">                
+            
+              <ul class="social-icons">
+            <li>
+                <a href="https://www.whatsapp.com/"style="color: lawngreen"><i class="fab fa-whatsapp"></i></a> </li>            
+            <li><a href="https://www.instagram.com/"style="color: deeppink;"><i class="fab fa-instagram"></i></a></li>       
+            <li><a href="https://twitter.com/"style="color: deepskyblue;"><i class="fab fa-twitter"></i></a></li>        
+            <li><a href="https://www.facebook.com/"style="color: #0F90F3;"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/"style="color: #FF0000;"><i class="fab fa-youtube"></i></a></li>      
+        </ul>
+     
+          </div>
+        </div>
+      </div>
+</footer>
 
+<script src="/js/home.js"></script>   
+<script src="https://kit.fontawesome.com/b92cac62d1.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,12 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>RollingGames - Login</title>
 </head>
 <body>
-<!--Navbar  bootstrap-->
- <div class="container-fluid pe-5">
+  <div>
+    <a href="../html/index.html" class="button-back">BACK</a>
+        <!--Form-->
+        <form id='login-form' onsubmit="login(event)">
+          <h3>LOGIN HERE</h3>
+          <div class="input-group">
+              <input type="email" id="email" required class="input">
+              <label for="email" class="input-label">Usuario</label>
+          </div>
+          <div class="input-group">
+              <input type="password" id="pass" required class="input">
+              <label for="pass" class="input-label">Contraseña</label>
+          </div>
+          <button class="button-login">
+              <span class="text">Ingresar</span>
+              <i class="fas fa-check icon"></i>
+          </button>
+          <button class="button-login"type="button" data-bs-toggle="modal" data-bs-target="#register-modal">
+              <span class="text">Registrarse</span>
+              <i class="fas fa-check icon"></i>
+          </button>
+          <div class="social">
+              <div class="go"><i class="fab fa-google"></i>Google</div>
+              <div class="fb"><i class="fab fa-facebook"></i>Facebook</div>
+          </div>
+      </form>
+  </div>
+<!-- MODAL DE REGISTRO -->
+<div class="modal" id="register-modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registrarse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="register(event)">
+          <label for="register-fullname">Nombre y apellido</label>
+          <input class="form-control" type="text" id="register-fullname" required maxlength="35" minlength="4">
+          <label for="register-email">Email</label>
+          <input class="form-control" type="email" id="register-email" required maxlength="35" minlength="4">
+          
+          <label for="register-pass">Contraseña</label>
+          <input class="form-control" type="password" id="register-pass" required maxlength="16" minlength="8">
+          <label for="register-pass2">Repetir contraseña</label>
+
+          <input class="form-control" type="password" id="register-pass2" required maxlength="16" minlength="8">
+          <div class="my-3">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/js/login&register.js"></script>
+<script src="https://kit.fontawesome.com/b92cac62d1.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Navbar  bootstrap--> -->
+ <!-- <div class="container-fluid pe-5">
  <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
    <a class="navbar-brand me-5 mb-lg-0" href="/html/index.html"> <img src="/Images/Logo.png" width="120px" > </a>
@@ -26,10 +98,10 @@
       </div>
     </div>
   </nav>
- </div>
+ </div> -->
 <!--Navbar  bootstrap-->
 <!--serch   bootstrap-->
-  <div class="container-fluid pe-5">
+  <!-- <div class="container-fluid pe-5">
   <nav class="navbar">
   <div class="container-fluid">
     <a class="navbar-brand">search</a>
@@ -39,8 +111,8 @@
     </form>
   </div>
   </nav>
-  </div>
-<!--serch   bootstrap-->
+  </div> -->
+<!--serch   bootstrap
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
