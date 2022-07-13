@@ -115,3 +115,15 @@ const move = (container, direccion) => {
 } 
 }
 
+// IDENTIFICAMOS SI EL USUARIO ES ADMIN O NO
+let userId = localStorage.getItem('user');
+let usersLS = JSON.parse(localStorage.getItem('users'));
+let userActive = users.find(user=>user.id==userId);;
+if(userActive.admin){
+  let adminButton = document.createElement('li');
+  adminButton.classList.add('nav-item','nav-buttons');
+  adminButton.innerHTML=`
+  <a class="nav-link" href="http://127.0.0.1:5502/html/tablaadmin.html">Administración</a>
+  `;
+  document.querySelector(".navbar-nav").appendChild(adminButton)
+}
