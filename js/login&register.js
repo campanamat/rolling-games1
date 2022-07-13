@@ -14,7 +14,7 @@ class User{
   }else{
     users = [        
         new User(1, 'Angel Carrera', 'ancar121286@gmail.com', 'Urugame2022',true),
-        new User(2, 'Fernando Garcia','fergarcia10@gmail.com','PROYECTrolling',true),
+        new User(2, 'Fernando Garcia','fergarcia10@gmail.com','Rolling123',true),
         new User(3, 'Pilar Juez Perez', 'pilijuez@gmail.com', 'Irlandagames2022',true),        
     ];
     localStorage.setItem('users',JSON.stringify(users));
@@ -26,6 +26,7 @@ class User{
     //*Validaciones del login */
     let emailOk= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email);
     let passOk= /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(pass);
+    console.log(emailOk,passOk);
     if(emailOk && passOk){     
       let userFound = users.find(user=>user.email===email);      
     if(userFound && userFound.password === pass){       
@@ -75,3 +76,6 @@ class User{
     }
   
   } 
+
+
+  

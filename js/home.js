@@ -12,9 +12,9 @@ class Game{
 // array con algunos juegos creados
 let games = [
     new Game(1,'GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../assets/Images/GTAV.png',false),
-    new Game(2,'GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../assets/Images/GTAV.png',false),
-    new Game(3,'GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../assets/Images/GTAV.png',false),
-    new Game(4,'GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../assets/Images/GTAV.png',false),
+    new Game(2,'GOD OF WAR','accion','God of War es un videojuego de acción-aventura desarrollado por SCE Santa Monica Studio y publicado por Sony Interactive Entertainment. Su lanzamiento se produjo el 20 de abril de 2018 como un título exclusivo para la consola PlayStation 4. Posteriormente, fue lanzado en Microsoft Windows el 14 de enero de 2022.','../assets/Images/GODOFWAR.jpg',false),
+    new Game(3,'RESIDENT EVIL 4','accion','conocido en Japón como Biohazard 4, es un videojuego de disparos en tercera persona de estilo terror y supervivencia desarrollado por Capcom Production Studio 4 y distribuido por varias compañías de videojuegos, como Capcom, Ubisoft, Nintendo Australia, Red Ant Enterprises y THQ Asia Pacific.','../assets/Images/RESIDENTEVIL4.jpg',true),     
+    new Game(4,'ASSASINS CREED','accion','Assassins Creed II: Brotherhood, titulado en español Assassins Creed: La Hermandad, es un videojuego de acción-aventura y sigilo de ficción histórica, desarrollado por Ubisoft Montreal. El juego fue lanzado a nivel mundial para PlayStation 3 y Xbox 360, comenzando en América del Norte el 16 de noviembre de 2010','../assets/Images/ASSASINGCREED.webp',false),
     new Game(5,'GRAND THEFT AUTO V','accion','Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.','../assets/Images/GTAV.png',false),
     new Game(6,'GOD OF WAR','accion','God of War es un videojuego de acción-aventura desarrollado por SCE Santa Monica Studio y publicado por Sony Interactive Entertainment. Su lanzamiento se produjo el 20 de abril de 2018 como un título exclusivo para la consola PlayStation 4. Posteriormente, fue lanzado en Microsoft Windows el 14 de enero de 2022.','../assets/Images/GODOFWAR.jpg',false),
     new Game(7,'RESIDENT EVIL 4','accion','conocido en Japón como Biohazard 4, es un videojuego de disparos en tercera persona de estilo terror y supervivencia desarrollado por Capcom Production Studio 4 y distribuido por varias compañías de videojuegos, como Capcom, Ubisoft, Nintendo Australia, Red Ant Enterprises y THQ Asia Pacific.','../assets/Images/RESIDENTEVIL4.jpg',true),     
@@ -26,14 +26,15 @@ let games = [
     new Game(13,'NBA 2K21','sports','NBA 2K21 es un videojuego de simulación de baloncesto de 2020 desarrollado por Visual Concepts y publicado por 2K Sports, basado en la Asociación Nacional de Baloncesto. Es la entrega número 22 de la franquicia NBA 2K y el sucesor de NBA 2K20, y el predecesor de NBA 2K22.','../assets/Images/NBA2K21.jpg', true),
     new Game(14,'FIFA 2022','sports','Es un videojuego desarrollado por EA Vancouver y EA Romania, siendo publicado por EA Sports. Está disponible para PlayStation 4, PlayStation 5, Xbox Series X/S, Xbox One, Microsoft Windows, Google Stadia y Nintendo Switch.','../assets/Images/fifa22.png', true),
     new Game(15,'PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
-    new Game(16,'PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
-    new Game(17,'PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
-    new Game(18,'PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
     new Game(19, 'PGA TOUR 2K21','sports','PGA Tour 2K21 es un videojuego deportivo desarrollado por HB Studios y publicado por 2K Sports para Stadia, Microsoft Windows, Nintendo Switch, PlayStation 4 y Xbox One.','../assets/Images/PGATOUR2021.jpg', false),
-    new Game(20,'AGE OF EMPIRES','estrategy','Age of Empires es una serie de videojuegos que en su mayoría pertenecen al género videojuego de estrategia en tiempo real, y hay otros juegos que pertenecen a otros géneros. La mayoría de los juegos son para la plataforma PC, y otros juegos son de otras plataformas.','../assets/Images/AGEOFEMPIRES.jpg',false),
-    new Game(21,'WARCRAFT III','estrategy','Warcraft III: Reign of Chaos es un videojuego de estrategia en tiempo real creado por Blizzard Entertainment y es la tercera parte de la serie Warcraft','../assets/Images/warcrat1.jpg', false),
-    new Game(22,'DOTA 2','estrategy','Ice Frog y Valve aúnan fuerzas para crear la segunda entrega de Defense of the Ancients. Manteniendo los más de cien héroes de la aventura original, el juego da un giro apostando por el motor Source desarrollado por Valve. El que nació como un mod para Warcraft III muta para convertirse en un juego free to play donde la estrategia en tiempo real y la fantasía serán los ingredientes esenciales. El juego se encuentra disponible tanto para PC como para Linux o Mac.','../assets/Images/dota2.jpg', true),
-    new Game(23,'AJEDREZ CHESS','estrategy','Este pequeño programa de ajedrez, contempla las opciones básicas para disfrutar de este juego de estrategia. Su interfaz, pese a ser sencillo, es realmente de mucha calidad y muy claro para jugar.','../assets/Images/ajedrezchess.png',false)   
+    new Game(20,'NBA 2K21','sports','NBA 2K21 es un videojuego de simulación de baloncesto de 2020 desarrollado por Visual Concepts y publicado por 2K Sports, basado en la Asociación Nacional de Baloncesto. Es la entrega número 22 de la franquicia NBA 2K y el sucesor de NBA 2K20, y el predecesor de NBA 2K22.','../assets/Images/NBA2K21.jpg', true),
+    new Game(21,'FIFA 2022','sports','Es un videojuego desarrollado por EA Vancouver y EA Romania, siendo publicado por EA Sports. Está disponible para PlayStation 4, PlayStation 5, Xbox Series X/S, Xbox One, Microsoft Windows, Google Stadia y Nintendo Switch.','../assets/Images/fifa22.png', true),
+    new Game(22,'PES 2013','sports','Pro Evolution Soccer 2013 es un videojuego de fútbol de la serie Pro Evolution Soccer desarrollado y publicado por Konami. El juego fue anunciado por Konami el 18 de abril de 2012,  fue lanzado el 20 de septiembre en Europa y empezó a ser puesto en venta el 25 de septiembre en América','../assets/Images/PES2013.webp',false),
+    new Game(23, 'PGA TOUR 2K21','sports','PGA Tour 2K21 es un videojuego deportivo desarrollado por HB Studios y publicado por 2K Sports para Stadia, Microsoft Windows, Nintendo Switch, PlayStation 4 y Xbox One.','../assets/Images/PGATOUR2021.jpg', false),
+    new Game(24,'AGE OF EMPIRES','estrategy','Age of Empires es una serie de videojuegos que en su mayoría pertenecen al género videojuego de estrategia en tiempo real, y hay otros juegos que pertenecen a otros géneros. La mayoría de los juegos son para la plataforma PC, y otros juegos son de otras plataformas.','../assets/Images/AGEOFEMPIRES.jpg',false),
+    new Game(25,'WARCRAFT III','estrategy','Warcraft III: Reign of Chaos es un videojuego de estrategia en tiempo real creado por Blizzard Entertainment y es la tercera parte de la serie Warcraft','../assets/Images/warcrat1.jpg', false),
+    new Game(26,'DOTA 2','estrategy','Ice Frog y Valve aúnan fuerzas para crear la segunda entrega de Defense of the Ancients. Manteniendo los más de cien héroes de la aventura original, el juego da un giro apostando por el motor Source desarrollado por Valve. El que nació como un mod para Warcraft III muta para convertirse en un juego free to play donde la estrategia en tiempo real y la fantasía serán los ingredientes esenciales. El juego se encuentra disponible tanto para PC como para Linux o Mac.','../assets/Images/dota2.jpg', true),
+    new Game(27,'AJEDREZ CHESS','estrategy','Este pequeño programa de ajedrez, contempla las opciones básicas para disfrutar de este juego de estrategia. Su interfaz, pese a ser sencillo, es realmente de mucha calidad y muy claro para jugar.','../assets/Images/ajedrezchess.png',false)   
 ]
 
 localStorage.setItem("games", JSON.stringify(games));
@@ -96,7 +97,7 @@ games.forEach((game) => {
   }
 });
 
-
+// FUNCION PARA MOVER CATEGORIAS
 const move = (container, direccion) => {
   console.log("funcionMove");
   const containerToMove = document.getElementById(container);
@@ -114,3 +115,15 @@ const move = (container, direccion) => {
 } 
 }
 
+// IDENTIFICAMOS SI EL USUARIO ES ADMIN O NO
+let userId = localStorage.getItem('user');
+let usersLS = JSON.parse(localStorage.getItem('users'));
+let userActive = users.find(user=>user.id==userId);;
+if(userActive.admin){
+  let adminButton = document.createElement('li');
+  adminButton.classList.add('nav-item','nav-buttons');
+  adminButton.innerHTML=`
+  <a class="nav-link" href="http://127.0.0.1:5502/html/tablaadmin.html">Administración</a>
+  `;
+  document.querySelector(".navbar-nav").appendChild(adminButton)
+}
