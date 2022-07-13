@@ -20,6 +20,11 @@
       
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul id="menu" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Buscador.html">
+              <i class="fa-solid fa-magnifying-glass lupa-icon d-flex align-items-center justify-content-center"></i>
+            </a>
+          </li>
           <li class="nav-item"> <a class="nav-link" href="/html/Contacto.html"> <img src="../assets/Images/Contacto.png" height="40px" > </a> </li>
           <li class="nav-item"> <a class="nav-link" href="/html/Acerca de.html"> <img src="../assets/Images/acerca de.png" height="40px" > </a> </li>
           <li class="nav-item nav-buttons"> <a class="nav-link" href="/html/index.html">Cerrar Sesion</a></li>
@@ -27,9 +32,6 @@
       </div>
       
     </nav>
-    </div>
-    <div class="container buscar">
-        <input class="form-control me-2 w-25" type="search" placeholder="Buscar..." aria-label="Search" id="searchInput" onkeyup="searchGame()">
     </div>
     </header>  
     <main>
@@ -66,11 +68,11 @@
       <section class="text-white bg-gradient m-3">
         <h2 class="title-category-accion p-3">ACCIoN</h2>
         <div class="d-flex align-items-center carrousel mt-0">
-          <button class="angle-left h-50 btn" onclick="move('accion-container','left')">
+          <button class="angle-left h-50 btn mx-1" onclick="move('accion-container','left')">
             <i class="fa-solid fa-arrow-left-long"></i>
           </button>
           <div class="d-flex p-5" id="accion-container"> </div>
-          <button class="angle-right h-50 btn" onclick="move('accion-container','right')">
+          <button class="angle-right h-50 btn mx-1" onclick="move('accion-container','right')">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
